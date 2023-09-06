@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 :root {
     --purple: #6e4f7d
 }
 
 body {
+    margin: 0;
+    font-family: "Lato";
     background-color: var(--purple);
+}
+
+#header {
+    background-color: #fff;
+
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header ul {
+    list-style: none;
+}
+
+#header a {
+    text-decoration: none;
+    color: var(--purple);
 }
