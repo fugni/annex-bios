@@ -3,6 +3,7 @@
 :root {
     --purple: #6e4f7d;
     --darker-purple: #5a3e6d;
+    --lighter-purple: #a386b1;
 }
 
 @media screen and (max-width: 768px) {
@@ -14,6 +15,22 @@
         display: none;
     }
 
+    #header-select {
+        height: 24px;
+        font-size: 18px;
+    }
+
+    #select-container {
+        font-size: 18px;
+    }
+
+    #select-container span {
+        font-size: 24px;
+    }
+
+    #header-movie-select {
+        padding: 12px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -35,6 +52,24 @@
 
     #navbar {
         display: flex;
+    }
+
+    #select-container {
+        margin-left: 50px;
+        font-size: 24px;
+    }
+
+    #header-select {
+        height: 36px;
+        font-size: 24px;
+    }
+
+    #select-container span {
+        font-size: 30px;
+    }
+
+    #header-movie-select {
+        padding: 16px;
     }
 }  
 
@@ -81,11 +116,6 @@ a {
     color: var(--darker-purple);
 }
 
-#select-container {
-    background-color: var(--purple);
-    color: #fff;
-}
-
 #hamburger-icon {
     height: 8vh;
     margin-right: 5px;
@@ -96,9 +126,6 @@ a {
 #hamburger-icon:hover {
     color: var(--darker-purple);
 }
-
-.hamburger-open {
-}   
 
 #hamburger-nav {
     text-align: center;
@@ -119,4 +146,43 @@ a {
 
 #hamburger-nav nav a:hover {
     background-color: var(--darker-purple);
+}
+
+#header-movie-select {
+    background-color: var(--purple);
+}
+
+#select-container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#select-container span {
+    font-weight: 700;
+}
+
+#select-container select {
+    margin: 0 20px;
+}
+
+#select-container a {
+    font-weight: 700;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: var(--purple);
+    border-radius: 1px;
+}
+
+#select-container a:hover {
+    background-color: #ddd;
+}
+
+#header-select {
+    cursor: pointer;
+    background-color: var(--lighter-purple);
+    color: white;
+    border: none;
+    border-radius: 1px;
+    padding-left: 5px;
 }
