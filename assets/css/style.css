@@ -6,6 +6,18 @@
     --lighter-purple: #a386b1;
 }
 
+@media screen and (min-width: 1200px) {
+    #navbar nav a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #navbar nav a {
+        font-size: 24px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #header-logo {
         width: 70vw;
@@ -95,7 +107,6 @@ a {
 }
 
 #navbar {
-
     margin-top: 10px;
 }
 
@@ -106,7 +117,6 @@ a {
 }
 
 #navbar nav a {
-    font-size: 30px;
     font-weight: 700;
     margin: 0 10px;
     color: var(--purple);
