@@ -1,0 +1,51 @@
+{
+    "code" : 200,
+    "movie_id": 1,
+    "movie_name": "The Shawshank Redemption",
+    "movie_year": 1994,
+    "age_rating": 18,
+    "price": 16.8,
+    "kijkwijzer": {
+        "Geweld": true,
+        "Angst": true,
+        "Grof taalgebruik": true,
+        "Drugs- en/of alcoholgebruik": false,
+        "Discriminatie": false,
+        "Seks": false,
+        "gevaarlijk gedrag": true
+    },
+    "duration": "2h 22m",
+    "genre": "Drama",
+    "review": 4.9,
+    "trailer_link": "https://www.youtube.com/embed/6hB3S9bIaco",
+    "poster_link": "https://www.movieposters.com/cdn/shop/products/0b2b67a1de6a06d1ce65e4ccc64047e3_a9f7318e-c5c4-4d2a-aed2-890bbfad883c_480x.progressive.jpg?v=1573590273",
+    "big_discription" : "here comes the big discription",
+    "small_discription": "here come the small discription",
+    "language_data": {
+        "languages" : [
+            "English",
+            "Hindi"
+        ],
+        "subtitles" : [
+            "English",
+            "Dutch"
+        ]
+    },
+    "cast": {
+        "people": [
+            "Morgan Freeman",
+            "Kaj Boogaard",
+            "Kaj Boogaard",
+            "Sebastiaan Heins"
+        ],
+        "people_img_link": [
+            "https://ichef.bbci.co.uk/news/976/cpsprodpb/13FCD/production/_130896818_donaldtrumpfullmugshot.jpg.webp",
+            "https://i.kym-cdn.com/entries/icons/original/000/034/213/cover2.jpg",
+            "https://townsquare.media/site/658/files/2023/02/attachment-mrbeast10.jpg?w=980&q=75",
+            "https://static.wikia.nocookie.net/half-life/images/4/41/G-Man_Alyx_Trailer.jpg/revision/latest?cb=20191122020607&path-prefix=en"
+        ]
+    },
+    "country_of_orgin": "USA",
+    "imbd_rating": 8.9,
+    "director": "Ross van Teeffelen"
+}
