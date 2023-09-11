@@ -9,23 +9,31 @@
 </head>
 <body>
     <div id="header">
-        <nav>
+        <div id="header-top">
             <a id="header-logo-container" href="#">
                 <img id="header-logo" src="assets/img/logo.png" alt="AnnexBios Bilthoven logo">
             </a>
-            <ul>
-                <li>
-                    <a href="#"><h2>FILM AGENDA</h2></a>
-                </li>
-                <li>
-                    <a href="#"><h2>ALLE VESTIGINGEN</h2></a>
-                </li>
-                <li>
-                    <a href="#"><h2>CONTACT</h2></a>
-                </li>
-            </ul>
-        </nav>
-        <div>
+            <div id="navbar">
+                <nav>
+                    <a href="#">FILM AGENDA</a>
+                    <a href="#">ALLE VESTIGINGEN</a>
+                    <a href="#">CONTACT</a>
+                </nav>
+            </div>
+            <div id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="hamburger-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </div>
+        </div>
+        <div id="hamburger-nav">
+            <nav>
+                <a href="#">FILM AGENDA</a>
+                <a href="#">ALLE VESTIGINGEN</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>  
+        <div id="header-movie-select">
             <div id="select-container">
                 <h2>Koop je Tickets</h2>
                 <select id="header-select">
@@ -38,7 +46,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="assets/js/script.js"></script>
 </body>

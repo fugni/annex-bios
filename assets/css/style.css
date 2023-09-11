@@ -1,13 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --purple: #6e4f7d
+    --purple: #6e4f7d;
+    --darker-purple: #5a3e6d;
 }
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+        width: 70vw;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #header-top {
+        margin: 5px 50px;
+    }
+
+    #header-logo {
+        width: 30vw;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+    }
+}  
 
 body {
     margin: 0;
     font-family: "Lato";
-    background-color: var(--purple);
+    /* background-color: var(--purple); */
+}
+
+a {
+    text-decoration: none;
 }
 
 #header {
@@ -15,16 +53,70 @@ body {
 
 }
 
-#header nav {
+#header-top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-#header ul {
-    list-style: none;
+#navbar {
+
+    margin-top: 10px;
 }
 
-#header a {
-    text-decoration: none;
+#navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar nav a {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 10px;
     color: var(--purple);
+}
+
+#navbar nav a:hover {
+    color: var(--darker-purple);
+}
+
+#select-container {
+    background-color: var(--purple);
+    color: #fff;
+}
+
+#hamburger-icon {
+    height: 8vh;
+    margin-right: 5px;
+    cursor: pointer;
+    color: var(--purple);
+}
+
+#hamburger-icon:hover {
+    color: var(--darker-purple);
+}
+
+.hamburger-open {
+}   
+
+#hamburger-nav {
+    text-align: center;
+}
+
+#hamburger-nav nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#hamburger-nav nav a {
+    padding: 10px 0;
+    font-size: 30px;
+    background-color: var(--purple);
+    color: #fff;
+}
+
+#hamburger-nav nav a:hover {
+    background-color: var(--darker-purple);
 }
