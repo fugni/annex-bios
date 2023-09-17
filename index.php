@@ -7,11 +7,10 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/filmagenda.css">
 </head>
 <body>
-    <div id="header">
-        <div w3-include-html="assets/includes/header.html"></div>
-    </div>
+    <?php include "assets/includes/header.php";?>
 
     <div id="body">
         <div id="body-top">
@@ -41,10 +40,9 @@
                 </div>
             </div>
         </div>
-        <div id="film-agenda">
-
-        </div>
     </div>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

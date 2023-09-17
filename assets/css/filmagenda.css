@@ -1,0 +1,128 @@
+@media screen and (max-width: 1200px) {
+    #filmagenda-header {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #filmagenda-header {
+        width: 50%;
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+#filmagenda-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filmagenda {
+    width: 75%;
+    color: var(--purple);
+}
+
+#filmagenda-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#filmagenda-header-txt {
+    background-color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#filmagenda-header-selectors {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filmagenda-header-selector-icon svg {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.filmagenda-header-selector {
+    background-color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    display: flex;
+}
+
+.filmagenda-header-selector input {
+    margin-right: 5px;
+}
+
+.filmagenda-header-selector svg {
+    margin: 2px 5px;
+    fill: var(--purple);
+}
+
+#filmagenda-gallery {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.film {
+    width: calc(100 / 6 * 1rem);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+.film-poster img {
+    width: 100%;
+}
+
+.film-info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.film-info div {
+    margin-bottom: 10px;
+}
+
+.film-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.film-rating svg {
+    height: 20px;
+    fill: var(--purple);
+}
+
+.film-release {
+    font-size: 20px;
+}
+
+.film-more-info-button {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.film-more-info-button a {
+    background-color: var(--purple);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}

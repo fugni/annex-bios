@@ -229,6 +229,10 @@ a {
     padding-left: 5px;
 }
 
+#body {
+    background-color: #000;
+}
+
 #body-top {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/header_afbeelding.jpg");
     background-position: 0 -200px;
@@ -236,6 +240,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #welcome {
@@ -273,7 +278,7 @@ a {
     margin-top: 50px;
     background-color: #fff;
     padding: 20px;
-    width: calc(75% - 20px);
+    width: calc(75% - 40px);
     display: flex;
     justify-content: space-between;
     
