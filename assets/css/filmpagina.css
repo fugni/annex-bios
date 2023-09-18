@@ -93,3 +93,23 @@
 .filmpagina-cast-member-img img {
     width: 9rem;
 }
+
+#filmpagina-bestel-button {
+    margin-top: 20px;
+    width: 75%;
+}
+
+#filmpagina-bestel-button span {
+    background-color: var(--purple);
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: calc(100% - 40px);
+    display: block;
+}
+
+#filmpagina-bestel-button span:hover {
+    background-color: var(--darker-purple);
+}

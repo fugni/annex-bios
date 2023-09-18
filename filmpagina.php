@@ -119,6 +119,7 @@
                     </div>
                 </div>
             </div>
+            <div id="filmpagina-bestel-button"><a href="bestel.php?id=<?php echo $_GET["id"] ?>"><span>KOOP JE TICKETS</span></a></div>
         </div>
     </div>
 
