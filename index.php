@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/filmagenda.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    
 </head>
 <body>
     <?php include "assets/includes/header.php";?>
@@ -46,6 +47,5 @@
     <?php include "assets/includes/filmagenda.php" ?>
     <?php include "assets/includes/footer.html" ?>
 
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
