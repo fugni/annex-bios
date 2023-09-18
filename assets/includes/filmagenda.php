@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/filmagenda.css">
-
 <div id="filmagenda-container">
     <div id="filmagenda">
         <div id="filmagenda-header">
@@ -49,6 +46,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>'
                 );
 
+                include "assets/includes/apikey.php";
+
                 $ch = curl_init();
                 $url = 'https://api.pulllee.com';
 
@@ -58,8 +57,8 @@
                 curl_setopt($ch, CURLOPT_URL, $url);
 
                 curl_setopt($ch, CURLOPT_HTTPHEADER, [
-                    "Authorization: api key here",
-                    'request: {"type": "movie", "id": 107}'
+                    "Authorization: ".$apikey,
+                    'request: {"type": "showing", "location": "Bilthoven"}'
                 ]);
 
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -74,32 +73,54 @@
 
                 curl_close($ch);
 
-                $response = json_decode($response);
+                $responseshowing = json_decode($response);
 
-                $film = $response;
+                for ($i=0; $i < count($responseshowing); $i++) { 
+                    $filmid = $responseshowing[$i]->movie_id;
 
-                echo "<div class=\"film\">";
-                    echo "<div class=\"film-poster\">";
-                        echo "<img src=".$response->poster." alt=\"\">";
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    
+                    curl_setopt($ch, CURLOPT_URL, $url);
+    
+                    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+                        "Authorization: cFamsD3E3Cjs2WhqKGMVZQsmxANQlipe",
+                        'request: {"type": "movie", "id": '.$filmid.'}'
+                    ]);
+    
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    
+                    $responsefilm = curl_exec($ch);
+    
+                    curl_close($ch);
+    
+                    $film = json_decode($responsefilm);
+    
+                    echo "<div class=\"film\">";
+                        echo "<div class=\"film-poster\">";
+                            echo "<img src=".$film->poster." alt=\"\">";
+                        echo "</div>";
+                        echo "<div class=\"film-info\">";
+                            echo "<div class=\"film-title\">";
+                                echo "<span>".$film->movie_name."</span>";
+                            echo "</div>";
+                            echo "<div class=\"film-rating\">";
+                                echo $ratings[round($film->rating/2)-1];
+                            echo "</div>";
+                            echo "<div class=\"film-release\">";
+                                echo "<span>Release: ".$film->movie_date."</span>";
+                            echo "</div>";
+                            echo "<div class=\"film-description\">";
+                                echo "<span>".$film->small_description."</span>";
+                            echo "</div>";
+                            echo "<div class=\"film-more-info-button\">";
+                                echo "<a href=filmpagina.php?".$film->movie_id.">MEER INFO & TICKETS</a>";
+                            echo "</div>";
+                        echo "</div>";
                     echo "</div>";
-                    echo "<div class=\"film-info\">";
-                        echo "<div class=\"film-title\">";
-                            echo "<span>".$response->movie_name."</span>";
-                        echo "</div>";
-                        echo "<div class=\"film-rating\">";
-                            echo $ratings[round($response->rating/2)-1];
-                        echo "</div>";
-                        echo "<div class=\"film-release\">";
-                            echo "<span>Release: ".$response->release_date."</span>";
-                        echo "</div>";
-                        echo "<div class=\"film-description\">";
-                            echo "<span>".$response->small_discription."</span>";
-                        echo "</div>";
-                        echo "<div class=\"film-more-info-button\">";
-                            echo "<a href=\"#placeholder\">MEER INFO & TICKETS</a>";
-                        echo "</div>";
-                    echo "</div>";
-                echo "</div>";
+    
+                }
+
 
             ?>
                 

@@ -19,7 +19,7 @@
                     <h1>WELKOM BIJ ANNEXBIOS BILTHOVEN</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis harum consectetur repellendus iure cum laudantium soluta ad voluptatem eveniet optio nihil, vitae nesciunt voluptas ducimus earum. Sequi, dolor accusamus. Libero.</p>
                 </div>
-                <a href="#film-agenda">BEKIJK DE DRAAIENDE FILMS</a>
+                <a href="#filmagenda">BEKIJK DE DRAAIENDE FILMS</a>
             </div>
             <div id="location">
                 <div id="location-left">
@@ -42,6 +42,7 @@
         </div>
     </div>
 
+    <?php include "assets/includes/filmagenda.php" ?>
 
     <script src="assets/js/script.js"></script>
 </body>

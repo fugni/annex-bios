@@ -5,7 +5,7 @@
         </a>
         <div id="navbar">
             <nav>
-                <a href="#">FILM AGENDA</a>
+                <a href="#filmagenda">FILM AGENDA</a>
                 <a href="#">ALLE VESTIGINGEN</a>
                 <a href="#">CONTACT</a>
             </nav>
