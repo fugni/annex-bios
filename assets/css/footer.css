@@ -1,13 +1,3 @@
-:root {
-    --purple: #6e4f7d
-}
-
-body {
-    background-color: var(--purple);
-    margin:0;
-
-}
-
 .footer{
     background-color: #707070;
     width: calc(100% - 140px);
@@ -21,6 +11,7 @@ body {
 .anexbios{
     float: left;
 }
+
 #popcorn{
     width: 301px;
     height:107px;
@@ -42,7 +33,6 @@ body {
     
 }
 
-
 .navigeer{
     padding-left:80px;
     color:white;
@@ -51,11 +41,11 @@ body {
 
 }
 
-h4{
+footer h4{
     font-size: 30px;
 }
 
-a{
+footer a{
     width:300px;
     height:130px;
     text-decoration: none;

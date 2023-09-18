@@ -84,7 +84,7 @@
                     curl_setopt($ch, CURLOPT_URL, $url);
     
                     curl_setopt($ch, CURLOPT_HTTPHEADER, [
-                        "Authorization: cFamsD3E3Cjs2WhqKGMVZQsmxANQlipe",
+                        "Authorization: ".$apikey,
                         'request: {"type": "movie", "id": '.$filmid.'}'
                     ]);
     

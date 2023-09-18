@@ -71,6 +71,7 @@ body {
 
 #filmagenda-gallery {
     margin-top: 70px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +118,7 @@ body {
 .film-more-info-button {
     margin-top: 10px;
     padding-bottom: 10px;
-}
+}   
 
 .film-more-info-button a {
     background-color: var(--purple);
