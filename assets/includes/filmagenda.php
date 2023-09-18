@@ -86,6 +86,21 @@
                             echo "<div class=\"film-description\">";
                                 echo "<span>".$film->small_description."</span>";
                             echo "</div>";
+                            echo "<div class=\"film-time\">";
+                                echo "<span>Showing: ".gmdate("H:i d-m-Y",strtotime($responseshowing[$i]->time))."</span>";
+                            echo "</div>";
+                            echo "<div class=\"film-zaal-3d\">";
+                                echo "<div class=\"film-zaal\">";
+                                    echo "<span>Zaal: ".($responseshowing[$i]->screen+1)."</span>";
+                                echo "</div>";
+                                echo "<div class=\"film-3d\">";
+                                    echo "<span>";
+                                        if ($responseshowing[$i]->{"3d"}) {
+                                            echo "3D";
+                                        };
+                                    echo "</span>";
+                                echo "</div>";
+                            echo "</div>";
                             echo "<div class=\"film-more-info-button\">";
                                 echo "<a href=filmpagina.php?id=".$film->movie_id.">MEER INFO & TICKETS</a>";
                             echo "</div>";
