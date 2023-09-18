@@ -10,12 +10,33 @@
     #navbar nav a {
         font-size: 30px;
     }
+
+    #location {
+        flex-direction: row;
+    }
+
+    #location-left {
+        width: 49%;
+    }
+    
+    #location-right {
+        width: 49%; 
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #navbar nav a {
         font-size: 24px;
     }
+
+    #location {
+        flex-direction: column;
+    }
+
+    #location-right {
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -42,6 +63,10 @@
 
     #header-movie-select {
         padding: 12px;
+    }
+
+    #location-txt {
+        width: 100%;
     }
 }
 
@@ -83,12 +108,19 @@
     #header-movie-select {
         padding: 16px;
     }
+
+    #location-txt {
+        width: 60%;
+    }
 }  
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     font-family: "Lato";
-    /* background-color: var(--purple); */
 }
 
 a {
@@ -195,4 +227,87 @@ a {
     border: none;
     border-radius: 1px;
     padding-left: 5px;
+}
+
+#body {
+    background-color: #000;
+}
+
+#body-top {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/header_afbeelding.jpg");
+    background-position: 0 -200px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#welcome {
+    width: 75%;
+    background-color: var(--purple);
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+#welcome-txt {
+    margin: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#welcome-txt h1 {
+    margin: 0;
+}
+
+#welcome a {
+    margin: 5px;
+    font-weight: 700;
+    padding: 10px 10px;
+    background-color: #fff;
+    color: var(--purple);
+    border-radius: 1px;
+}
+
+#welcome a:hover {
+    background-color: #ddd;
+}
+
+#location {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    width: calc(75% - 40px);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#location-left {
+    position: relative;
+}
+
+#location-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#location-map img {
+    width: 100%;
+}
+
+#location-info {
+    color: #fff;
+    background-color: var(--purple);
+    position: absolute;
+    bottom: 0;
+}
+
+#location-txt {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
