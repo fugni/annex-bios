@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1200px) {
     #filmagenda-header {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -113,6 +113,25 @@ body {
 
 .film-release {
     font-size: 20px;
+}
+
+.film-description {
+    font-size: 20px;
+}
+
+.film-time {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.film-zaal-3d {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.film-3d {
+    margin-left: 40px;
 }
 
 .film-more-info-button {
