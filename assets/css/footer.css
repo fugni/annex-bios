@@ -56,11 +56,13 @@ footer a{
 .sociaal{
     float: left;
     padding-left:80px;
+    height:320px;
+    width:300px;
     color:white;
 }
 
 
-.cirlce{
+.circle{
     background-color:#FFFFFF;
     width: 43px;
     height:43px;
@@ -85,7 +87,143 @@ footer a{
 }
 
 #filmrol{
-    clear:both;
-    margin-top: -280px;
+    float: left;
     padding-left:70px;
+}
+
+@media only screen and (max-width: 820px) {
+    /* For tablets: */
+
+
+    .anexbios{
+        width:40%;
+    }
+
+    #popcorn{
+            width:200px;
+            height:75px;
+    }
+    #info{
+        width:250px;
+
+    }
+
+    .navigeer{
+        width:20%;
+        margin-left:-100px;
+        padding-left:120px;
+        font-size: 20px;
+        margin-top:-20px;
+    }
+    .navigeer h4 {
+        font-size:25px; 
+    }
+
+    .sociaal{
+        width:20%;
+        margin-top: -20px;
+    }
+
+    .sociaal h4{
+        font-size: 25px;
+    }
+    
+    .circle{
+        background-color:#FFFFFF;
+        width: 33px;
+        height:33px;
+        border-radius: 50%;
+        float: left;
+        margin-right:10px;
+    }
+    
+    #facebookimg{
+        margin-top:15%;
+        margin-left:30%;
+    }
+    
+    #twitterimg{
+        margin-top:20%;
+        margin-left:10%;
+    }
+    
+    #instaimg{
+        margin-top:19%;
+        margin-left:21%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 400px) {
+    /* For tablets: */
+
+
+    .anexbios{
+        margin: -50px;
+        height:20%;
+        clear:both;
+    }
+
+    #popcorn{
+            width:120px;
+            height:45px;
+    }
+    #info{
+        width:300px;
+        height:100px;
+    }
+
+    #leesmeer{
+        border:none;
+        background-color: aliceblue;
+        height: 20px;
+        width:100px;
+        color:#666666;
+        cursor:pointer;
+        
+    }
+
+    .navigeer{
+        font-size: 10px;
+        margin-top:170px;
+        padding-left: 50px;
+    }
+    .navigeer h4 {
+        font-size:15px; 
+        margin-bottom:-5px;
+    }
+
+    .sociaal{
+        margin-top: 170px;
+        width: 200px;
+    }
+
+    .sociaal h4{
+        font-size: 15px;
+        margin-bottom:-5px;
+
+    }
+    
+    .circle{
+        background-color:#FFFFFF;
+        width: 33px;
+        height:33px;
+        border-radius: 50%;
+        margin-left:-5px;
+        margin-top: 10px;
+        float: left;
+    }
+    
+    #twitterimg{
+        margin-top:20%;
+        margin-left:5%;
+    }
+    
+    #instaimg{
+        margin-top:19%;
+        margin-left:20%;
+    }
+    
+
 }
