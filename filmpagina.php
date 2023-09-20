@@ -18,6 +18,10 @@
         include "assets/includes/apikey.php";
         include "assets/includes/ratingarray.php";
 
+        if (($_GET["id"]) == "chooseone") {
+            echo "<div style=\"font-size: 100px\">Kies een film...</div>";
+            exit();
+        }
 
         // Movie api call
         $ch = curl_init();
