@@ -19,7 +19,7 @@
         include "assets/includes/ratingarray.php";
 
         if (($_GET["id"]) == "chooseone") {
-            echo "go fuck yourself";
+            echo "<div style=\"font-size: 100px\">Kies een film...</div>";
             exit();
         }
 
