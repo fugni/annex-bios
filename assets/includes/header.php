@@ -1,11 +1,11 @@
 <div id="header">
     <div id="header-top">
-        <a id="header-logo-container" href="#">
+        <a id="header-logo-container" href="./">
             <img id="header-logo" src="assets/img/logo.png" alt="AnnexBios Bilthoven logo">
         </a>
         <div id="navbar">
             <nav>
-                <a href="#filmagenda">FILM AGENDA</a>
+                <a href="./#filmagenda">FILM AGENDA</a>
                 <a href="#">ALLE VESTIGINGEN</a>
                 <a href="#">CONTACT</a>
             </nav>
@@ -18,7 +18,7 @@
     </div>
     <div id="hamburger-nav">
         <nav>
-            <a href="#">FILM AGENDA</a>
+            <a href="./#filmagenda">FILM AGENDA</a>
             <a href="#">ALLE VESTIGINGEN</a>
             <a href="#">CONTACT</a>
         </nav>
@@ -35,4 +35,17 @@
             <a href="#">Bestel Tickets</a>
         </div>
     </div>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const hamburgerNav = document.getElementById("hamburger-nav");
+        hamburgerNav.style.display = "none";
+
+        hamburger.addEventListener("click", () => {
+            if (hamburgerNav.style.display == "none") {
+                hamburgerNav.style.display = "flex";
+            } else {
+                hamburgerNav.style.display = "none";  
+            }
+        })
+    </script>
 </div>

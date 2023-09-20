@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1200px) {
     #filmagenda-header {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -71,6 +71,7 @@ body {
 
 #filmagenda-gallery {
     margin-top: 70px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -114,10 +115,29 @@ body {
     font-size: 20px;
 }
 
+.film-description {
+    font-size: 20px;
+}
+
+.film-time {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.film-zaal-3d {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.film-3d {
+    margin-left: 40px;
+}
+
 .film-more-info-button {
     margin-top: 10px;
     padding-bottom: 10px;
-}
+}   
 
 .film-more-info-button a {
     background-color: var(--purple);
