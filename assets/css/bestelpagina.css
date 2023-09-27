@@ -186,7 +186,7 @@ hr{
 
 #step4{
     padding: 2%;
-    padding-top:5%;
+    padding-top:2%;
     padding-left:5%
 }
 
@@ -278,4 +278,31 @@ hr{
     margin-top: 2%;
     height: fit-content;
     border-left: 20px solid #000;
+}
+
+#step3-movie {
+    margin-top: 10px;
+    width: 90%;
+    border: 2px solid var(--purple);
+    display: flex;
+}
+
+#step3-movie-poster {
+    width: calc(20% + 20px);
+    padding: 10px;
+}
+
+#step3-movie-poster img {
+    width: 100%;
+}
+
+#step3-movie-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#step3-movie-rating svg {
+    height: 20px;
+    fill: var(--purple);
 }

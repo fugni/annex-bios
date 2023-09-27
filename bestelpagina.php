@@ -172,6 +172,15 @@
             </div>
             <div id="step3">
                 <h2>STAP 3: CONTROLEER JE BESTELLING</h2>
+                <div id="step3-movie">
+                    <div id="step3-movie-poster">
+                        <img src="<?php echo $responsemovie->poster ?>" alt="">
+                    </div>
+                    <div id="step3-movie-info">
+                        <div id="step3-movie-title"><?php echo $responsemovie->movie_name ?></div>
+                        <div id="step3-movie-rating"><?php echo $ratings[$responsemovie->rating] ?></div>
+                    </div>
+                </div>
             </div>
             <div id="step4">
                 <h2>STAP 4: VUL JE GEGEVENS IN</h2>
