@@ -85,7 +85,7 @@
             <div id="filmpagina-info">
                 <div id="filmpagina-poster"><img src="<?php echo $responsemovie->poster ?>" alt=""></div>
                 <div id="filmpagina-txt">
-                    <div id="filmpagina-rating"><?php echo $ratings[round($responsemovie->rating/2)-1]; ?></div>
+                    <div id="filmpagina-rating"><?php echo $ratings[round($responsemovie->rating)]; ?></div>
                     <div id="filmpagina-release-date"><span>Release: <?php echo $responsemovie->movie_date ?></span></div>
                     <div id="filmpagina-description"><span><?php echo $responsemovie->big_description ?></span></div>
                     <div id="filmpagina-more-info">
