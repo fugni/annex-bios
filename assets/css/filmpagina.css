@@ -48,7 +48,7 @@
     margin: 20px;
 }
 
-#filmpagina-rating img {
+#filmpagina-rating svg {
     fill: var(--purple);
     height: 24px;
 }
