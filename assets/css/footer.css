@@ -72,6 +72,7 @@ footer a{
     border-radius: 50%;
     float: left;
     margin-right:10px;
+    cursor: pointer;
 }
 
 #facebookimg{
@@ -80,8 +81,9 @@ footer a{
 }
 
 #twitterimg{
-    margin-top:28%;
-    margin-left:5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 26.47290697674419%;
 }
 
 #instaimg{

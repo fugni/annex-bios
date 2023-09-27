@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/filmpagina.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    
 </head>
 <body>
     <?php include "assets/includes/header.php";?>
@@ -19,7 +20,7 @@
         include "assets/includes/ratingarray.php";
 
         if (($_GET["id"]) == "chooseone") {
-            echo "<div style=\"font-size: 100px\">Kies een film...</div>";
+            echo "<div style=\"font-size: 100px; margin-left: 20px\">Kies eerst een film...</div>";
             exit();
         }
 

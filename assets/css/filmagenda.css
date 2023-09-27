@@ -69,6 +69,24 @@ body {
     fill: var(--purple);
 }
 
+#filmagenda-header-categorie-label {
+    height: calc(100% - 0.5px);
+}
+
+#filmagenda-header-categorie-select {
+    margin-left: 5px;
+    background-color: #fff;
+    height: calc(100% - 2px);
+}
+
+#filmagenda-header-categorie-select select {
+    border: 0;
+    font-size: 18px;
+    height: calc(100% - 2px);
+    background-color: #fff;
+    color: var(--purple);
+}
+
 #filmagenda-gallery {
     margin-top: 70px;
     margin-bottom: 30px;
