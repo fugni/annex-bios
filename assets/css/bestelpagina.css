@@ -1,0 +1,238 @@
+*{
+    font-family:'Rubik', sans-serif ;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: black;
+}
+
+#titlecard{
+    background-color:white;
+    width: 80%;
+    height:100px;
+    margin:0 auto;
+    color:#6E4F7D;
+    font-size: 40px;
+}
+
+#title{
+    padding:25px;
+}
+
+.dropdown{
+    display: flex;
+    color:#6E4F7D;
+    width: 22%;
+    justify-content: space-around;
+    padding-top: 2%;
+    margin-left:10%
+}
+
+.dropdown select{
+    width:120%;
+    text-align: center;
+    color:#6E4F7D;
+    width:80px;
+    height:30px;
+}
+
+#selectedmovie{
+    background-color: white;
+    width:80px;
+    height:25px;
+    text-align: center;
+    padding-top:5px;
+}
+
+.information{
+    width:65%;
+    height: auto;
+    margin-left:10%;
+    background-color: white;
+    color:#6E4F7D;
+    margin-top: 2%;
+}
+
+#step1 h2 {
+    padding: 2%;
+    padding-left:5%
+}
+
+#type{
+    float: left;
+    padding-left:5%;
+    margin-right: 65% ;
+}
+
+#prijs{
+    float:left;
+}
+
+#aantal{
+    float: right;
+    margin-right: 5%;
+}
+hr{
+    clear: both;
+    width:90%;
+    margin:0 auto;
+}
+
+#leeftijden{
+    margin-left: 5%;
+}
+
+.age{
+    float: left;
+    padding-top: 1%;
+}
+
+.price{
+    margin-left:73%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#step1 select{
+    color:#6E4F7D;
+    float:right ;
+    margin-top: -3.3%;
+    margin-right:7%;
+}
+
+#bottomline{
+    clear: both;
+    width:100%;
+    margin:0 auto;
+}
+
+#vouchercode{
+    display:flex;
+}
+
+#vouchercode h4{
+    padding-top:2%;
+    padding-right:2%;
+}
+
+#vouchercode input{
+    margin-top:1.5%;
+    width:55%;
+    height:25px;
+}
+
+#codebutton{
+    margin-top:1.8%;
+    height:25px;
+    background-color: #6E4F7D;
+    color:white;
+    border:none;
+    margin-left:2%;
+    width:20%;
+}
+
+#step2 h2 {
+    padding: 2%;
+    padding-top:5%;
+    padding-left:5%
+}
+
+#legenda{
+    margin-left:27%;
+}
+
+#vrij{
+    background-color:#9D7EC8 ;
+    width: 15%;
+    height: 25px;
+    padding-top: 1%;
+    margin-right:5%;
+    text-align: center;
+    color:white;
+    float: left;
+    
+}
+
+#bezet{
+    background-color:#523579 ;
+    width: 15%;
+    text-align: center;
+    height: 25px;
+    padding-top: 1%;
+    color:white;
+    margin-right:5%;
+    float: left;
+}
+
+#selectie{
+    background-color: #794EB4;
+    width: 20%;
+    text-align: center;
+    height: 25px;
+    padding-top: 1%;
+    color:white;
+    float: left;
+}
+
+#step3{
+    padding: 2%;
+    padding-top:5%;
+    padding-left:5%
+}
+
+#step4{
+    padding: 2%;
+    padding-top:5%;
+    padding-left:5%
+}
+
+#step4 h2{
+    padding-bottom: 2%;
+}
+
+.name{
+    width:20%;
+    height:30px;
+    border:2px solid #6E4F7D;
+    padding-left:5px;
+}
+
+.email{
+    width:41.5%;
+    height:30px;
+    border:2px solid #6E4F7D;
+    padding-left:5px;
+    margin-top:1%;
+}
+
+#step5{
+    padding: 2%;
+    padding-top:5%;
+    padding-left:5%
+}
+
+#step5 img{
+    padding-top:3%;
+    padding-right:2%;
+    padding-left:1%;
+    height:40px;
+}
+
+#av{
+    padding-top:3%;
+}
+
+#afrekenen{
+    background-color: #6E4F7D;
+    margin-top:2%;
+    margin-left:10%;
+    margin-bottom:5%;
+    width: 65%;
+    height:50px;
+    padding-top: 1.5%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
