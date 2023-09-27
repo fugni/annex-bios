@@ -92,7 +92,7 @@
                                 echo "<span>".$film->movie_name."</span>";
                             echo "</div>";
                             echo "<div class=\"film-rating\">";
-                                echo $ratings[round($film->rating/2)-1];
+                                echo $ratings[round($film->rating)];
                             echo "</div>";
                             echo "<div class=\"film-release\">";
                                 echo "<span>Release: ".$film->movie_date."</span>";

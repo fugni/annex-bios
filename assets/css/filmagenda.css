@@ -124,7 +124,7 @@ body {
     padding-bottom: 5px;
 }
 
-.film-rating svg {
+.film-rating img {
     height: 20px;
     fill: var(--purple);
 }

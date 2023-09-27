@@ -1,5 +1,4 @@
 *{
-    font-family:'Rubik', sans-serif ;
     margin:0;
     padding:0;
 }
@@ -18,41 +17,44 @@ body{
 }
 
 #title{
+    margin-top: 60px;
     padding:25px;
 }
 
 .dropdown{
     display: flex;
     color:#6E4F7D;
-    width: 22%;
-    justify-content: space-around;
     padding-top: 2%;
     margin-left:10%
 }
 
 .dropdown select{
-    width:120%;
     text-align: center;
     color:#6E4F7D;
-    width:80px;
     height:30px;
+    padding: 5px;
+    border-radius: 0;
+    border: 0;
+    background-color: #fff;
+    margin-left: 10px;
 }
 
 #selectedmovie{
     background-color: white;
-    width:80px;
     height:25px;
     text-align: center;
     padding-top:5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .information{
-    width:65%;
+    width: 70%;
     height: auto;
-    margin-left:10%;
     background-color: white;
     color:#6E4F7D;
     margin-top: 2%;
+    padding-right: 1.5%;
 }
 
 #step1 h2 {
@@ -119,7 +121,7 @@ hr{
 
 #vouchercode input{
     margin-top:1.5%;
-    width:55%;
+    width:50%;
     height:25px;
 }
 
@@ -209,7 +211,7 @@ hr{
 
 #step5{
     padding: 2%;
-    padding-top:5%;
+    padding-top:2%;
     padding-left:5%
 }
 
@@ -235,4 +237,45 @@ hr{
     text-align: center;
     color: white;
     cursor: pointer;
+}
+
+#seats {
+    margin: auto;
+    width: calc(5vw*11);
+    max-width: calc(48px*11);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+#seats img {
+    width: 5vw;
+    max-width: 48px;
+}
+
+#step2 {
+    padding-bottom: 10px;
+}
+
+#filmdoek {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    border-top: 5px solid var(--purple);
+}
+
+#information-and-film {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.film {
+    margin-top: 2%;
+    height: fit-content;
+    border-left: 20px solid #000;
 }
